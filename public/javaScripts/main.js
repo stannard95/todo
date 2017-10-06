@@ -1,13 +1,13 @@
-// $(function () {
+$(function () {
 
-// 	var $todos = $('.todo');
-// var $todoPriorities = $('.priority');
-// var $toDoComplete = $('.complete');
+var $todos = $('.todo');
+var $todoPriorities = $('p.priority-text');
+var $toDoComplete = $('.complete-text');
 
 
 function shuffle() {
 
-	var newTodoContainer = ('<div class=todos-container');
+	var $newTodoContainer = $('<div class=todos-container');
 
 	var orderedPriorities = [];
 	for (var i = 0; i < $todoPriorities.length; i++) {
@@ -19,21 +19,15 @@ function shuffle() {
 }
 
 function getValues() {
-	console.log($toDoComplete.html());
+	// for(var i = 0; i < $todoPriorities; i++) {
+	// 	console.log(i);
+	// 	console.log($todoPriorities.eq(i).html());
+	// }
 }
 
 
-function comparePriority(x, y) {
-	priorities = ['low', 'medium', 'high'];
+getValues();
 
-	if (y === 1) {
-		return y;
-	}
+});
 
-	else if (y)
 
-}
-
-// });
-
-console.log('hello');
