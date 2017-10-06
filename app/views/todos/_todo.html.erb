@@ -1,0 +1,13 @@
+<div class="todo">
+  <p>Title: <strong><%= todo.title %></strong></p>
+  <p>body: <strong><%= todo.body %></strong></p>
+  <p class="priority-text">Priority: <strong><%= todo.priority %></strong></p>
+  <p class="complete-text">Complete: <strong><%= todo.complete %></strong></p>
+
+  <br>
+  <footer>
+	  <%= link_to "Show Page", todo if action_name == "index" %> |
+	  <%= link_to "Edit Page", edit_todo_path(todo) %>
+  </footer>
+</div>
+<div class="sep"></div>

@@ -1,0 +1,12 @@
+
+<div class="page-container">
+	  <%= render @todos %>
+
+	  <div id="delete-link">
+	  <%= link_to "Delete", @todo, method: :delete, data: { confirm: "Are you sure?" } %>
+	  </div>
+	<br>
+
+	
+
+</div>
