@@ -9,23 +9,12 @@ function shuffle() {
 
 	var newTodoContainer = ('<div class=todos-container');
 
-	var highestElement = '0';
+	var orderedPriorities = [];
 	for (var i = 0; i < $todoPriorities.length; i++) {
-		var element = $todoPriorities.eq(i);
-
-		if (highestElement === "0") {
-		var highestElement = comparePriority(highestElement.parseInt(), 
-			element.html().parseInt());
-
-		} else {
-			var highestElement = comparePriority(highestElement.html().parseInt(), 
-			element.html().parseInt());
-		}
-
-		
-
-		newTodoContainer.append(newTodo);
+		var element = $todoPriorities.eq(i).html().parseint();
+		orderedPriorities.push(element);
 	}
+	orderedPriorities.sort();
 	
 }
 
